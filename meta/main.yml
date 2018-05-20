@@ -1,0 +1,23 @@
+galaxy_info:
+  author: Thiago Gomes Verissimo
+  description: vimspell
+
+  issue_tracker_url: https://github.com/thiagogomesverissimo/ansible-role-vim-spell
+
+  license: license (GPLv2, CC-BY, etc)
+
+  min_ansible_version: 2.2
+
+  platforms:
+   - name: Ubuntu
+     versions:
+     - all
+   - name: Fedora
+     versions:
+     - all
+
+  galaxy_tags:
+    - vim
+    - spell
+
+dependencies: []

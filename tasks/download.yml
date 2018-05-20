@@ -1,0 +1,13 @@
+- name: create spell directory
+  file:
+    path: "{{vimspell_home}}/.vim/spell"
+    recurse: yes
+    state: directory
+    owner: "{{vimspell_user}}"
+    group: "{{vimspell_user}}"
+
+- name: download languagues
+  get_url:
+    url: "http://ftp.vim.org/pub/vim/runtime/spell/{{item}}.utf-8.spl"
+    dest: "{{vimspell_home}}/.vim/spell/{{item}}.utf-8.spl"
+  with_items: "{{vimspell_languages}}"

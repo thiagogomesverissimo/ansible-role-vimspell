@@ -1,0 +1,8 @@
+---
+# defaults file for ansible-role-vim-spell
+vimspell_home: "/root"
+vimspell_user: root
+vimspell_languages:
+  - pt
+  - en
+  - es
