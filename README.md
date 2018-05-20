@@ -11,12 +11,12 @@ vim installed
 Role Variables
 --------------
 
-vimspell_home: "/root"
-vimspell_user: root
-vimspell_languages:
-  - pt
-  - es
-  - en
+    vimspell_home: "/root"
+    vimspell_user: root
+    vimspell_languages:
+      - pt
+      - es
+      - en
 
 Example Playbook
 ----------------
