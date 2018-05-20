@@ -1,0 +1,23 @@
+" {{ ansible_managed }}
+
+" source: https://stackoverflow.com/questions/17964612/dynamically-change-spell-checking-on-a-key-stroke
+
+function! <SID>ToggleSpell()
+    let spelllang_list = {{vimspell_list}}
+    let string = []
+
+    for i in range(len(spelllang_list))
+        call add(string, i+1 . ") " . spelllang_list[i])
+    endfor
+
+    if ! &spell
+        let &spell = 1
+        let selection = inputlist(string)
+        let &spelllang = spelllang_list[selection-1]
+    else
+        let &spell = 0
+        echo "'spell' disabled..."
+    endif
+endfunction
+
+noremap <{{vimspell_key}}> :call <SID>ToggleSpell()<CR>

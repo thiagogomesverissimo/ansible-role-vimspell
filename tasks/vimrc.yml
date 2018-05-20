@@ -1,0 +1,10 @@
+---
+- template:
+    src: vimrc.spell.toggle.j2
+    dest: "{{vimspell_home}}/.vimrc.spell.toggle"
+    owner: "{{vimspell_user}}"
+    group: "{{vimspell_user}}"
+
+- lineinfile:
+    path: "{{vimspell_home}}/.vimrc"
+    line: 'source .vimrc.spell.toggle'

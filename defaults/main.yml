@@ -6,3 +6,7 @@ vimspell_languages:
   - pt
   - en
   - es
+vimspell_key: F7
+
+# temporary, until discovery how to build this from vimspell_languages
+vimspell_list: "[ 'pt', 'en', 'es' ]"
