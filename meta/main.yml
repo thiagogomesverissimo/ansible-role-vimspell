@@ -1,8 +1,9 @@
 galaxy_info:
   author: Thiago Gomes Verissimo
-  description: vimspell
+  description: 
+  name: vimspell
 
-  issue_tracker_url: https://github.com/thiagogomesverissimo/ansible-role-vim-spell
+  issue_tracker_url: https://github.com/uspdev/ansible-role-vim-spell
 
   license: license (GPLv2, CC-BY, etc)
 
