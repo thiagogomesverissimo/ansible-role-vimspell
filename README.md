@@ -23,7 +23,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - thiagogomesverissimo.vimspell
+         - uspdev.vimspell
 
 License
 -------
