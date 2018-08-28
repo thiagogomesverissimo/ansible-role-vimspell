@@ -1,7 +1,7 @@
 galaxy_info:
   author: Thiago Gomes Verissimo
   description: vim spell role
-  name: vimspell
+  role_name: vimspell
 
   issue_tracker_url: https://github.com/uspdev/ansible-role-vim-spell
 
