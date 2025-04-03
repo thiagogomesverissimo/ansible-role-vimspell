@@ -6,8 +6,11 @@
     owner: "{{vimspell_user}}"
     group: "{{vimspell_user}}"
 
+#https://ftp.pl.vim.org/pub/vim/runtime/spell/
+#https://ftp.cc.uoc.gr/pub/vim/runtime/
+
 - name: download languagues
   get_url:
-    url: "http://ftp.vim.org/pub/vim/runtime/spell/{{item}}.utf-8.spl"
+    url: "https://ftp.pl.vim.org/pub/vim/runtime/spell/{{item}}.utf-8.spl"
     dest: "{{vimspell_home}}/.vim/spell/{{item}}.utf-8.spl"
   with_items: "{{vimspell_languages}}"
